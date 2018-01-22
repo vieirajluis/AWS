@@ -1,0 +1,6 @@
+{
+  "TableName": "things",
+  "Item" : {
+      "thingid": "apitest"
+    }
+}

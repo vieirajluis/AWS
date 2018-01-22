@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SeeSaw Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.min.css" integrity="sha256-8nf+BDtOgthqqdcfZXfDwth8LL6k314ILswPBDzXMp4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      .ssl__nav img {
+        width: auto;
+        height: 50px;
+        max-height: none;
+      }
+      .ssl__nav .nav-right {
+        display: flex;
+      }
+      .ssl__content {
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav ssl__nav">
+        <div class="nav-left">
+          <a href="https://www.seesawlabs.com" class="nav-item" target="_blank"><img src="https://www.seesawlabs.com/assets/images/desktopLogo.svg" alt="Seesaw Labs Logo"></a>
+        </div>
+        <div class="nav-center"></div>
+        <div class="nav-right">
+          <a href="https://www.github.com/seesawlabs" class="nav-item">
+            <span class="icon"><i class="fa fa-github"></i></span>
+          </a>
+          <a href="https://twitter.com/seesawlabs" class="nav-item">
+            <span class="icon"><i class="fa fa-twitter"></i></span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container ssl__content">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <form id="form" action="https://r47lijbkc8.execute-api.us-west-2.amazonaws.com/test/dynamoDBCRUD">
+            <input type="hidden" value="things" name="TableName" />
+            <div class="card">
+              <div class="card-header">
+                <p class="card-header-title">Form</p>
+              </div>
+              <div class="card-content">
+                <div id="items"></div>
+              </div>
+              <div class="card-content">
+                <div class="field">
+                  <p class="control">
+                    <input type="text" class="input" placeholder="A thing" name="thingid" required="required">
+                  </p>
+                </div>
+                <div class="field">
+                  <button class="button is-primary" id="button">Add Thing</button>
+                </div>
+                <div class="notification is-danger" id="error" style="display: none;"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

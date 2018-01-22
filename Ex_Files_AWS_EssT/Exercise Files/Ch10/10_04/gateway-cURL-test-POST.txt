@@ -1,0 +1,2 @@
+curl -H "Content-Type: application/json" -X POST -d "{ \"TableName\": \"things\",\"Item\": {\"thingid\": \"curltest\"}}" https://r47lijbkc8.execute-api.us-west-2.amazonaws.com/test/dynamoDBCRUD
+
