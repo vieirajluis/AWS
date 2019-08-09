@@ -11,7 +11,7 @@ a. Open a text editor on your computer. Copy and paste the following HTML code:
 <head>My CloudFront Test</head>
 <body>
 <p>My text content goes here.</p>
-<p><img src="http://domain name/object name" alt="my test image">
+<p><img src="http:// domain name/object name" alt="my test image">
 </body>
 </html>
 
