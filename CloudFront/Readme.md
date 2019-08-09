@@ -7,13 +7,16 @@ Test your distribution:
 
 a. Open a text editor on your computer. Copy and paste the following HTML code:
 
-"<html>
-<head>My CloudFront Test</head>
-<body>
-<p>My text content goes here.</p>
-<p><img src="http:// domain name/object name" alt="my test image">
-</body>
-</html>"
+     <div class="aws-code parbase section text"> 
+                <pre><p>&lt;html&gt;</p>
+<p>&lt;head&gt;My CloudFront Test&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;p&gt;My text content goes here.&lt;/p&gt;</p>
+<p>&lt;p&gt;&lt;img src=&quot;http://domain name/object name&quot; alt=&quot;my test image&quot;&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+</pre> 
+               </div> 
 
 
 Replace domain name with the domain name that CloudFront assigned to your distbribution, such as d111111abcdef8.cloudfront.net.
