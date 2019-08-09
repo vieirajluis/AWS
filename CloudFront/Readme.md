@@ -7,13 +7,13 @@ Test your distribution:
 
 a. Open a text editor on your computer. Copy and paste the following HTML code:
 
-<html>
+"<html>
 <head>My CloudFront Test</head>
 <body>
 <p>My text content goes here.</p>
 <p><img src="http:// domain name/object name" alt="my test image">
 </body>
-</html>
+</html>"
 
 
 Replace domain name with the domain name that CloudFront assigned to your distbribution, such as d111111abcdef8.cloudfront.net.
