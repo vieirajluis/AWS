@@ -1,5 +1,5 @@
-AWS CloudFront Test
-
+Deliver Content Faster
+with Amazon CloudFront
 
 
 Test your distribution:
