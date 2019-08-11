@@ -10,7 +10,7 @@ import com.amazonaws.services.s3.model.KMSEncryptionMaterialsProvider;
 public class S3Client {
     public static void main(String[] args) {
         AWSCredentials credentials = new BasicAWSCredentials(
-                "YOUR Access key ID", "YOUR Secret access key");
+                "YOUR Access key ID", "YOUR Secret access key"); //IAM - User credentials
 
         EncryptionMaterialsProvider encryptionMaterialsProvider = new KMSEncryptionMaterialsProvider(
                 "arn:aws:kms:XXXXXXXXXXX"); //user kms policy
