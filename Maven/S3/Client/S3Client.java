@@ -11,6 +11,10 @@ public class S3Client {
     public static void main(String[] args) {
         AWSCredentials credentials = new BasicAWSCredentials(
                 "YOUR Access key ID", "YOUR Secret access key"); //IAM - User credentials
+				
+		//Or get credentials from CredentialsProvider . (Best practice)
+		//DefaultAWSCredentialsProviderChain chain = new DefaultAWSCredentialsProviderChain();
+        //AWSCredentials credentials = chain.getCredentials();
 
         EncryptionMaterialsProvider encryptionMaterialsProvider = new KMSEncryptionMaterialsProvider(
                 "arn:aws:kms:XXXXXXXXXXX"); //user kms policy

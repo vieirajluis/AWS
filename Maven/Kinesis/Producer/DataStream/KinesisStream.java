@@ -18,6 +18,10 @@ public class KinesisStreamProducer {
     public static void main(String[] args) throws Exception {
         AWSCredentials credentials = new BasicAWSCredentials(
                   "YOUR Access key ID", "YOUR Secret access key");
+				  
+		//Or get credentials from CredentialsProvider . (Best practice)
+		//DefaultAWSCredentialsProviderChain chain = new DefaultAWSCredentialsProviderChain();
+        //AWSCredentials credentials = chain.getCredentials();
 
         AmazonKinesis kinesis = AmazonKinesisClientBuilder.standard()
                 .withCredentials(new AWSStaticCredentialsProvider(credentials)).withRegion("us-east-1").build(); // Standard by region
